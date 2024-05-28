@@ -1,0 +1,68 @@
+/*Base settings*/
+@font-face {
+    font-family: 'adelia';
+    src: url(./adelia.ttf);
+}
+@font-face {
+    font-family: 'basic_font';
+    src: url(./Astonpoliz.ttf);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+/*Heading top*/
+
+#header_top {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000c4;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 100vw;
+}
+
+#header_title {
+    color: #ffffff;
+    font-size: 2rcap;
+    text-align: center;
+    font-family: 'adelia',sans-serif;
+    width: 65vw;
+}
+
+#logo_heading {
+    height: 20vh;
+    width: 10vw;
+}
+
+#header_label_password {
+    color: #ffffff;
+}
+
+#header_label_login {
+    color: #ffffff;
+}
+
+#header_login {
+    font-family: 'basic_font';
+    width: 25vw;
+}
+
+#identifiant::placeholder {
+    font-family: "basic_font";
+}
+
+#password::placeholder {
+    font-family:"basic_font";
+}
+
+input, label {
+    display: block;
+    margin-top: 2px;
+}
