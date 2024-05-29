@@ -8,10 +8,15 @@
     src: url(./Astonpoliz.ttf);
 }
 
+
 * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    --color-dark: #0c0c0cdb;
+    --color-dark_brown: #481E14;
+    --color-light_brown: #9B3922;
+    --color-beige: #F2613F;
 }
 
 
@@ -22,23 +27,34 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background-color: #000000c4;
+    background-color: var(--color-dark);
     padding-top: 50px;
     padding-bottom: 50px;
     width: 100vw;
+    border-radius: 10px;
 }
 
 #header_title {
-    color: #ffffff;
+    color: var(--color-beige);
     font-size: 2rcap;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
     font-family: 'adelia',sans-serif;
     width: 65vw;
 }
 
+#header_title_acceuil {
+    font-family: "basic_font";
+}
+
 #logo_heading {
     height: 20vh;
-    width: 10vw;
+    width: 15vw;
+    padding-left: 50px;
+    display: block;
+    transition: rotate 10000ms;
 }
 
 #header_label_password {
@@ -51,7 +67,15 @@
 
 #header_login {
     font-family: 'basic_font';
-    width: 25vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: end;
+    padding: 10px;
+    margin-right: 10px;
+    border:var(--color-beige) solid 3px;
+    border-radius: 10px;
+    
 }
 
 #identifiant::placeholder {
@@ -65,4 +89,90 @@
 input, label {
     display: block;
     margin-top: 2px;
+}
+
+body {
+    background-image: url("https://book-nook.fr/cdn/shop/collections/book-nook.webp?v=1705638315");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#mid {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center ;
+    background-color: var(--color-dark);
+    width: 20vw;
+    border-radius: 10px;
+    height: 65vh;
+    padding: 30px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center ;
+    background-color: var(--color-dark);
+    width: 60vw;
+    margin-left: 30px;
+    margin-right: 30px;
+    color: var(--color-beige);
+    border-radius: 10px;
+    height: 65vh;
+    padding: 30px;
+    font-family: "basic_font";
+    text-align: center;
+}
+
+#main_title {
+    font-family: "adelia";
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center ;
+    background-color: var(--color-dark);
+    width: 20vw;
+    border-radius: 10px;
+    font-family: "basic_font";
+    color: var(--color-beige);
+    height: 65vh;
+    padding: 30px;
+}
+
+.button {
+    display: block;
+    text-decoration: none;
+    color: var(--color-beige);
+    font-family: "basic_font";
+    background-color: var(--color-dark_brown);
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    width: 70%;
+    box-shadow: #000 3px 3px 8px;
+    transition: box-shadow 300ms;
+    transition: background-color 300ms;
+}
+
+.button:hover {
+    box-shadow: none;
+    background-color: var(--color-light_brown);
+}
+
+#logo_heading:hover {
+    rotate: 7200deg;
 }
